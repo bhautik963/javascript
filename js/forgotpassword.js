@@ -29,6 +29,6 @@ function setdata(key, obj) {
     setTimeout(() => {
         localStorage.setItem(key, JSON.stringify(obj))
         alert("Password reset..")
-        window.location.href = "../index.html"
+        window.location.href = "../login.html"
     }, 100);
 }
