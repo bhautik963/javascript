@@ -224,7 +224,7 @@ nav ul li {
   margin: 1em;
 }
 
-nav ul li {
+nav ul li span{
   position: absolute;
   width: 25%;
   height: 100%;
