@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./login.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/deshboard.js"></script>
+  </head>
+  <body onload="setTableFormate()" class="dashboard">
+    <header>
+      <nav>
+        <ul style="background: blue; height: 80px;">
+          <li style="float: left;" onclick="location.href='./profile.html';">Profile<span></span><span></span><span></span><span></span>  </li>
+          <li  style="float: right;"  onclick="logout()">Logout<span></span><span></span><span></span><span></span></li>
+          </ul>
+      </nav>
+    </header>
+    <div class="container content"  style="float: left; background-color: aliceblue; width: 200px; height: 150px; margin-top: 40px;"> 
+      <h1 id="temperature"></h1>
+      <h2 id="description"></h2>
+      <p id="location"></p>
+    </div>
+    <div class="container content" style="float: right;"> 
+      <iframe class="card" id="myImg" class="myImg" style="width: 200px; height: 200px;"> </iframe>
+    </div>  
+    <div class="container content">
+    <a href="./task.html"><button class="btn">ADD NEW </button></a>
+      <h1 style="color: black; font-weight: bold;">Panding Task</h1>
+        <table class="table" id="tablepanding"></table>
+        <h1 style="color: black; font-weight: bold;">Complited Task</h1>
+        <table class="table" id="tablecomplit"></table>
+    </div>
+  </body>
+  <script src="./js/weather.js"></script>
+  <script src="./js/gif.js"></script>
+</html>
